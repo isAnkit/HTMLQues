@@ -11,8 +11,11 @@
 <body>
     <center>
         <h1>HTML INTERVIEW QUESTIONS</h1>
+        <hr style="width:50%">
     </center>
-
+    <center>
+        <h1>PART I : CONCEPTS</h1>
+    </center>
     <h2 style="background-color:lightgreen" ;>
         <font color="#231E1D"> 1. Difference Between Div And Span </font>
     </h2>
@@ -41,34 +44,32 @@
     </h2>
     <pre style="font-size:large;">
     >> A self closing tags in HTML are the type of HTML tags that need not to be closed manually by its closing tag, which
-       means there is no saperate closing tag for it as </tag>.
+       means there is no saperate closing tag for it as &lt;/tag>.
     
        A few examples of self closing tags are img, input, br, hr etc
     </pre>
     <h2 style="background-color:lightgreen" ;>
         <font color="#231E1D"> 4. How many types of headings are there ?How to decide which to use where  </font></h2>
         <pre style="font-size:large;">
-        >> There are Six Types Of Heading h1 to h6.
-        h1 and h2 can be used for title. h3 ,h4 ,h5 least priority over.
-        According to our uses we can use them. 
+    >> There are Six Types Of Heading h1 to h6. h1 and h2 can be used for title. h3 ,h4 ,h5 least priority over.
+       According to our uses we can use them. 
         </pre>
         <h2 style="background-color:lightgreen" ;>
             <font color="#231E1D"> 5. Difference between block and inline</font> </h2>
-            <pre style="font-size:large;">
-            >> A block-level element always starts on a new line, and the browsers 
-               automatically add some space (a margin) before and after the element.
-               A block-level element always takes up the full width available. Ex : p and div.
+        <pre style="font-size:large;">
+    >> A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+       A block-level element always takes up the full width available. Ex : &lt;p> and &lt;div>
 
-               An inline element does not start on a new line.
-               An inline element only takes up as much width as necessary. Ex : span
+       An inline element does not start on a new line.
+       An inline element only takes up as much width as necessary. Ex : &lt;span>
             </pre>
             <h2 style="background-color:lightgreen" ;>
                 <font color="#231E1D"> 6. Difference between em and strong </font>
             </h2>
             <pre style="font-size:large;">
-            >> strong and em adds extra semantic meaning to the webpage. They also give a bold and italic style to the text.
-               we can use strong to mean that a particular text is strongly emphasized.
-               Same goes with em it indicates emphasis and also give italic effect.
+    >> strong and em adds extra semantic meaning to the webpage. They also give a bold and italic style to the text.
+       we can use strong to mean that a particular text is strongly emphasized.
+       Same goes with em it indicates emphasis and also give italic effect.
             </pre>
     <h2 style="background-color:lightgreen" ;>
         <font color="#231E1D"> 7. What are attributes? </font>
@@ -77,7 +78,7 @@
     >> HTML attributes provide additional information about HTML elements.
        It's some kind of special keyword.
        Attributes usually come in name/value pairs like: name="value"
-       Ex : href attribute in a tag,src attribute in img tag.
+       Ex : href attribute in &lt;a> tag,src attribute in &lt;img> tag.
        Attribute should be written in lowercase only as they are case sensitive.
     </pre>
     <h2 style="background-color:lightgreen" ;>
@@ -94,7 +95,7 @@
         <font color="#231E1D"> 9. Explain br tags </font>
     </h2>
     <pre style="font-size:large;">
-    >> USed To Give Line Break.
+    >> Used To Give Line Break.
     </pre>
     <h2 style="background-color:lightgreen" ;>
         <font color="#231E1D"> 10. What are semantic tags? </font>
@@ -104,6 +105,217 @@
     In HTML there are some semantic elements that can be used to define different parts of a web page.
     Ex : table,form,article,aside,section,footer,header,nav etc.
     </pre>
-</body>
 
-</html>
+    <center>
+        <h1>PART II : IMPLEMENTATION</h1>
+    </center>
+
+    <h2 style="background-color:bisque" ;>
+        <font color="#231E1D"> 1. Write code to create an ordered list with roman numbers </font>
+    </h2>
+    <pre style="font-size:large;">
+    <code>
+<b style="font-size:large;">Code:</b>
+        
+            &ltol type="i">
+            &ltli>I am First&lt/li>
+            &ltli>I am Second&lt/li>
+            &ltli>I am Third&lt/li>
+            &ltli>I am Fourth&lt/li>
+            &ltli>I am Fifth&lt/li>
+            &lt/ol>
+    </code>
+    </pre>
+    <b style="font-size:large;">Output:</b>
+    <pre style="font-size:large;">
+    <ol type="i">
+        <li>I am First</li>
+        <li>I am Second</li>
+        <li>I am Third</li>
+        <li>I am Fourth</li>
+        <li>I am Fifth</li>
+        </ol>
+    </pre>
+
+    <h2 style="background-color:bisque" ;>
+        <font color="#231E1D"> 2. Write code to create an unordered list with circle  </font>
+    </h2>
+    <pre style="font-size:large;">
+        <code>
+<b style="font-size:large;">Code:</b>
+            
+            &ltul type="circle">
+            &ltli>I am First&lt/li>
+            &ltli>I am Second&lt/li>
+            &ltli>I am Third&lt/li>
+            &ltli>I am Fourth&lt/li>
+            &ltli>I am Fifth&lt/li>
+            &lt/ul>
+            </code>
+            </pre>
+    <b style="font-size:large;">Output:</b>
+        <pre style="font-size:large;">
+            <ul type="circle">
+                <li>I am First</li>
+                <li>I am Second</li>
+                <li>I am Third</li>
+                <li>I am Fourth</li>
+                <li>I am Fifth</li>
+                </ul>
+</pre>
+<h2 style="background-color:bisque" ;>
+        <font color="#231E1D"> 3. Write code to create a link to https://www.prepbytes.com  </font>
+            </h2>
+            <pre style="font-size:large;">
+                <code>
+<b style="font-size:large;">Code:</b>
+                    
+        &lta href="https://www.prepbytes.com/">https://www.prepbytes.com&lt/a>
+                </code>
+</pre>
+<b style="font-size:large;">Output:</b>
+<pre style="font-size:large;">
+    <a href="https://www.prepbytes.com/">https://www.prepbytes.com</a>
+    </pre>
+    <h2 style="background-color:bisque" ;>
+        <font color="#231E1D"> 4. Write a code to insert an image </font>
+            </h2>
+            <pre style="font-size:large;">
+                <code>
+<b style="font-size:large;">Code:</b>
+             &ltimg src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg" alt="">
+        
+<b style="font-size:large;">Output:</b>
+        <pre style="font-size:large;">
+            <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg" alt="">
+
+        </pre></code></pre>
+
+<center>
+    <h1>PART III : IMPLEMENTATION DIFFICULT</h1>
+</center>
+<h2 style="background-color:bisque" ;>
+    <font color="#231E1D"> 1. Write html code to create a 2*2 table : Table columns should be name and salary , and provide two entries for this. </font>
+        </h2>
+        <pre style="font-size:large;">
+            <code>
+<b style="font-size:large;">Code:</b>
+        &lttable border="1px;">
+        &lttr>
+        &ltth>Name&lt/th>
+        &ltth>Salary&lt/th>
+        &lt/tr>
+        &lttr>
+        &lttd>John&lt/td>
+        &lttd>Rs 55,000&lt/td>
+        &lt/tr>
+        &lttr>
+        &lttd>Miguel&lt/td>
+        &lttd>Rs 44,000&lt/td>
+        &lt/tr>
+        &lt/table>
+        &lt/pre>
+
+<b style="font-size:large;">Output:</b>
+        <pre style="font-size:large;">
+        <table border="1px;">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Rs 55,000</td>
+            </tr>
+            <tr>
+                <td>Miguel</td>
+                <td>Rs 44,000</td>
+            </tr>
+        </table>
+        </pre>
+</code>
+</pre>
+        <h2 style="background-color:bisque" ;>
+            <font color="#231E1D"> 2. Create a form contain input fields like name age email and contact </font>
+        </h2>
+        <pre style="font-size:large;">
+            <code>
+<b style="font-size:large;">Code:</b>
+            &ltform action="#">
+            &ltlabel for="name">Name&lt/label>
+            &ltinput type="text" name="name" id="name">&ltbr>&ltbr>
+            &ltlabel for="age">Age&lt/label>
+            &ltinput type="number" name="age" id="age">&ltbr>&ltbr>
+            &ltlabel for="email">Email&lt/label>
+            &ltinput type="email" name="email" id="email">&ltbr>&ltbr>
+            &ltlabel for="contact">Contact&lt/label>
+            &ltinput type="tel" name="contact" id="contact">&ltbr>&ltbr>
+            &ltinput type="submit" value="Submit">
+</form></code></pre>
+<b style="font-size:large;">Output:</b><br> <br>    
+<form action="#">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br><br>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age"><br><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"><br><br>
+    <label for="contact">Contact</label>
+    <input type="tel" name="contact" id="contact"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<h2 style="background-color:bisque" ;>
+    <font color="#231E1D"> 3. Create a table and explain how to acheive colspan </font>
+</h2>
+<pre style="font-size:large;">
+    <code>
+<b style="font-size:large;">Code:</b>
+<table border = "1" style="width: 40%">
+    &lttr>
+    &ltth>Books&lt/th>
+    &ltth colspan="2">Pens&lt/th>
+    &ltth>Marker&lt/th>
+    &lt/tr>
+    &lttr>
+    &lttd>50&lt/td>
+    &lttd>145&lt/td>
+    &lttd>100&lt/td>
+    &lttd>50&lt/td>
+    &lt/tr>
+
+ Explanation : Here we were having 2 types of pen data but only one table heading.
+               So We had to use both data in the same table heading(Pen).
+               In Table Heading "Pens" we have used colspan to combine the both data in the same heading.
+               By using colspan="2"(as we have 2 column data only to span) we were able to merge the columns in the same heading.
+<b style="font-size:large;">Output:</b><br><br>
+<table border = "1" style="width: 40%">
+    <tr>
+    <th>Books</th>
+    <th colspan="2">Pens</th>
+    <th>Marker</th>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>145</td>
+        <td>100</td>
+        <td>50</td>
+    </tr>
+</table></table></code></pre>
+    <h2 style="background-color:bisque" ;>
+        <font color="#231E1D"> 4. Create radio button (MERN, MEAN : course)and checkbox(HTML, CSS, React, Node : technology) and explain the difference between them  </font>
+    </h2>
+    
+    <label for="course">Course:</label><br><br>
+    <input type="radio" name="course" id="mern" value="mern"> MERN<br>
+    <input type="radio" name="course" id="mean" value="mean"> MEAN<br>
+<br>
+    <label for="technology">Technology:</label><br><br>
+    <input type="checkbox" name="technology" id="html" value="html"> HTML<br>
+    <input type="checkbox" name="technology" id="css" value="css"> CSS<br>
+    <input type="checkbox" name="technology" id="react" value="react"> React<br>
+    <input type="checkbox" name="technology" id="node" value="node"> Node<br>
+<br>
+ <pre style="font-size:large;"><strong>Explanation : Difference Between Radio And Checkbox is in radio we can select only one option but in checkbox we can select one or multiple options.</strong>
+ </pre>
+            </body>
+            </html>
